@@ -22,3 +22,6 @@ Understanding the time value of money is essential in finance. I designed this s
 3. Run the script in your terminal:
    ```bash
    python compound-growth-loop.py
+
+---
+*Created by Hakan*
