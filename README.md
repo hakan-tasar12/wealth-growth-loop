@@ -18,7 +18,7 @@ Understanding the time value of money is essential in finance. I designed this s
 
 ## 🚀 How to Run
 1. Ensure Python 3.x is installed.
-2. Download the `main.py` file.
+2. Download the `compound-growth-loop.py` file.
 3. Run the script in your terminal:
    ```bash
-   python main.py
+   python compound-growth-loop.py
