@@ -1,27 +1,39 @@
-# Compound Growth Engine
+# Compound Growth Simulator
 
-This is a Python-based financial tool built as part of the **Angela Yu 100 Days of Code Bootcamp**. The project focuses on simulating how money accumulates over time through compound interest, applying fundamental programming concepts to real-world finance.
+A small command-line tool that answers one question: **given a starting amount, an
+annual return rate, and a target, how many years until you reach it?** It compounds
+the balance year by year in a `while` loop and prints the path to the goal.
 
-## 📌 Project Concept
-Understanding the time value of money is essential in finance. I designed this simulation to calculate how long it takes to reach a specific financial goal. It uses an iterative logic where the calculation repeats until the target amount is achieved.
+```text
+Starting Amount ($): 10000
+Annual Return Rate (%): 8
+Target Goal ($): 20000
+...
+Year 9: $19,990.05
+Success! Goal reached in 9 years.
+```
 
+## Why
 
+Compounding is the most basic — and most counterintuitive — idea in finance: over
+long horizons, *time* does more work than the size of each contribution. I built this
+while learning Python (Angela Yu, 100 Days of Code) to make that intuition concrete
+and to practice loop-driven control flow.
 
-[Image of Compound Interest Curve]
+## Run
 
+```bash
+python3 compound-growth-loop.py
+```
 
-## 🛠 Technical Features
-* **Iterative Logic:** Uses a `while` loop to handle calculations where the number of cycles depends on user-defined goals.
-* **Dynamic Inputs:** The script accepts custom values for starting capital, annual interest rates, and final targets.
-* **Professional Formatting:** Outputs are displayed as currency with proper decimal precision and separators.
-* **Simulation Flow:** Includes a controlled output delay to visualize year-by-year growth.
+No third-party packages — standard library only (Python 3.8+).
 
-## 🚀 How to Run
-1. Ensure Python 3.x is installed.
-2. Download the `compound-growth-loop.py` file.
-3. Run the script in your terminal:
-   ```bash
-   python compound-growth-loop.py
+## Scope & limitations
+
+- A single fixed annual rate — no inflation, taxes, fees, or variable returns.
+- Annual compounding only (not monthly or continuous).
+- Floating-point math for readable output; not intended for exact financial accounting.
+- A learning project, not investment advice.
 
 ---
-*Created by Hakan*
+*Created by Hakan Taşar*
